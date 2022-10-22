@@ -13,11 +13,11 @@ import (
 
 	"github.com/forbole/bdjuno/v3/types/config"
 
-	firmachainapp "github.com/firmachain/firmachain/app"
 	"github.com/forbole/bdjuno/v3/database"
 	"github.com/forbole/bdjuno/v3/modules"
 
-	gaiaapp "github.com/cosmos/gaia/v6/app"
+	gaiaapp "github.com/cosmos/gaia/v7/app"
+	firmachainapp "github.com/firmachain/firmachain/app"
 )
 
 func main() {
@@ -66,6 +66,9 @@ func getBasicManagers() []module.BasicManager {
 // This should be edited by custom implementations if needed.
 func getAddressesParser() messages.MessageAddressesParser {
 	return messages.JoinMessageParsers(
+		FirmaChainCosmWasmMessagesParser,
+		FirmaChainFeegrantMessagesParser,
+		FirmaChainAuthzMessagesParser,
 		FirmaChainContractMessagesParser,
 		FirmaChainNFTMessagesParser,
 		FirmaChainTokenMessagesParser,
