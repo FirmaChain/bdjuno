@@ -25,13 +25,14 @@ func Builder(ctx *db.Context) (db.Database, error) {
 	}
 
 	psqlDb, ok := (database).(*postgresql.Database)
+
 	if !ok {
 		return nil, fmt.Errorf("invalid configuration database, must be PostgreSQL")
 	}
 
 	return &Db{
 		Database: psqlDb,
-		Sqlx:     sqlx.NewDb(psqlDb.Sql, "postgresql"),
+		Sqlx:     sqlx.NewDb(psqlDb.Sql.DB, "postgresql"),
 	}, nil
 }
 

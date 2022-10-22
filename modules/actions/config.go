@@ -1,6 +1,8 @@
 package actions
 
 import (
+	"fmt"
+
 	"github.com/forbole/juno/v3/node/remote"
 	"gopkg.in/yaml.v3"
 )
@@ -33,5 +35,8 @@ func ParseConfig(bz []byte) (*Config, error) {
 	}
 	var cfg T
 	err := yaml.Unmarshal(bz, &cfg)
+
+	fmt.Println(cfg)
+
 	return cfg.Config, err
 }

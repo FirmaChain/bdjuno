@@ -1,8 +1,6 @@
 package actions
 
 import (
-	"fmt"
-
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 	"github.com/forbole/juno/v3/modules"
 	"github.com/forbole/juno/v3/node"
@@ -40,9 +38,6 @@ func NewModule(cfg config.Config, encodingConfig *params.EncodingConfig) *Module
 	}
 
 	nodeCfg := cfg.Node
-
-	fmt.Println(actionsCfg)
-
 	if actionsCfg.Node != nil {
 		nodeCfg = nodeconfig.NewConfig(nodeconfig.TypeRemote, actionsCfg.Node)
 	}

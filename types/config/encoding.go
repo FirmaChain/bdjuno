@@ -6,6 +6,19 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 )
 
+// INFO: check for config to use ethermint by dh
+// MakeEncodingConfig creates an EncodingConfig to properly handle all the messages
+/*
+func MakeEncodingConfig(managers []module.BasicManager) func() params.EncodingConfig {
+	return func() params.EncodingConfig {
+		manager := mergeBasicManagers(managers)
+		encodingConfig := ethermint.MakeConfig(manager)
+		evmtypes.RegisterInterfaces(encodingConfig.InterfaceRegistry)
+		return encodingConfig
+	}
+}
+*/
+
 // MakeEncodingConfig creates an EncodingConfig to properly handle all the messages
 func MakeEncodingConfig(managers []module.BasicManager) func() params.EncodingConfig {
 	return func() params.EncodingConfig {
