@@ -23,6 +23,8 @@ func (m *Module) RunAdditionalOperations() error {
 
 	// -- Bank --
 	worker.RegisterHandler("/account_balance", handlers.AccountBalanceHandler)
+	worker.RegisterHandler("/total_supply", handlers.TotalSupplyHandler)
+	worker.RegisterHandler("/inflation", handlers.InflationHandler)
 
 	// -- Distribution --
 	worker.RegisterHandler("/delegation_reward", handlers.DelegationRewardHandler)
