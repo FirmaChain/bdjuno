@@ -23,5 +23,7 @@ func InflationHandler(ctx *types.Context, payload *types.Payload) (interface{}, 
 		return nil, fmt.Errorf("error while getting inflation: %s", err)
 	}
 
-	return inflation, nil
+	return types.Inflation{
+		Amount: inflation.String(),
+	}, nil
 }

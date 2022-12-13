@@ -23,5 +23,7 @@ func TotalSupplyHandler(ctx *types.Context, payload *types.Payload) (interface{}
 		return nil, fmt.Errorf("error while getting total supply: %s", err)
 	}
 
-	return balance, nil
+	return types.Balance{
+		Coins: types.ConvertCoins(balance),
+	}, nil
 }

@@ -13,6 +13,10 @@ type Coin struct {
 	Denom  string `json:"denom"`
 }
 
+type Inflation struct {
+	Amount string `json:"amount"`
+}
+
 func ConvertCoins(coins sdk.Coins) []Coin {
 	amount := make([]Coin, 0)
 	for _, coin := range coins {
