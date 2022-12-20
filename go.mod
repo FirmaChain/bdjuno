@@ -6,7 +6,7 @@ require (
 	github.com/CosmWasm/wasmd v0.29.2
 	github.com/cosmos/cosmos-sdk v0.45.9
 	github.com/cosmos/gaia/v7 v7.1.0
-	github.com/firmachain/firmachain v0.3.5-beta5
+	github.com/firmachain/firmachain v0.3.5-patch
 	github.com/forbole/juno/v3 v3.4.0
 	github.com/go-co-op/gocron v1.16.1
 	github.com/gogo/protobuf v1.3.3

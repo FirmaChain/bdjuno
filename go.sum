@@ -459,8 +459,8 @@ github.com/fatih/color v1.13.0/go.mod h1:kLAiJbzzSOZDVNGyDpeOxJ47H46qBXwg5ILebYF
 github.com/felixge/httpsnoop v1.0.1/go.mod h1:m8KPJKqk1gH5J9DgRY2ASl2lWCfGKXixSwevea8zH2U=
 github.com/felixge/httpsnoop v1.0.2 h1:+nS9g82KMXccJ/wp0zyRW9ZBHFETmMGtkk+2CTTrW4o=
 github.com/felixge/httpsnoop v1.0.2/go.mod h1:m8KPJKqk1gH5J9DgRY2ASl2lWCfGKXixSwevea8zH2U=
-github.com/firmachain/firmachain v0.3.5-beta5 h1:lJsPvh0yJ1/Uzd1gPW+El9AqIdCqvTDr1qNxWjoncdQ=
-github.com/firmachain/firmachain v0.3.5-beta5/go.mod h1:jbsWEhGW8E26CvDErrk5F5KMqIz60hMHCqfamNCEv54=
+github.com/firmachain/firmachain v0.3.5-patch h1:MqfIGOWz/LwemekWz3zoVzk0Frh+YRyl6spLJH60F9A=
+github.com/firmachain/firmachain v0.3.5-patch/go.mod h1:jbsWEhGW8E26CvDErrk5F5KMqIz60hMHCqfamNCEv54=
 github.com/firmachain/juno/v3 v3.4.6 h1:r4NnPG6Lxek8HAd84+DP31DZhEevC8p4prjFt7S8v6I=
 github.com/firmachain/juno/v3 v3.4.6/go.mod h1:774PDsA2dq4BlifcPTaSJLNdOpBsVGUJJ45XLgp6RZE=
 github.com/fjl/memsize v0.0.0-20180418122429-ca190fb6ffbc/go.mod h1:VvhXpOYNQvB+uIk2RvXzuaQtkQJzzIx6lSBe1xv7hi0=
